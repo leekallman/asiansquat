@@ -13,8 +13,11 @@
 }
 
 @font-face {
-  font-family: Ancho;
-  src: url(AnchoGX.ttf);
+  font-family: Syne Mono;
+  src: url(syne-mono.otf);
+}
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -25,7 +28,7 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 
-  background-color: #FD700B;
+  background-color: #FD620B/*#FD700B*/;
   color: #000;
 }
 
@@ -39,13 +42,13 @@ body {
   font-weight: normal;
 }
 
-.helvetica{
-  font-family: 'Helvetiva neue' serif;
+.mono{
+  font-family: 'Syne Mono' georgia, serif;
   font-weight: normal;
 }
 
 canvas {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -90,7 +93,7 @@ canvas {
   }
 
 
-  .mobility, .lisa{
+  .mobility, .lisa, .internet{
     border-bottom: 1px dotted;
     padding-bottom: -5px;
     position:relative;
@@ -130,12 +133,19 @@ canvas {
     content: attr(data-tooltip);
   }
 
-  .lisa:hover::after{
+  .lisa:hover::after {
     position: absolute;
-    content: url(../images/me.jpg);
+    content: url(../images/me2.png);
     display: block;
-    transform: translate(200%, -100%) scale(0.7);
-    mix-blend-mode: color-burn;
+    transform: translate(-111%, -89%) scale(1);
+    z-index: 1000;
+  }
+
+  .internet:hover::after {
+    position: absolute;
+    content: url(https://media.giphy.com/media/Ecz51X5IAD5DO/giphy.gif);
+    transform: translate(-69%, 40%) scale(0.5);
+    z-index: 1000;
   }
 
   .thumb{
@@ -153,13 +163,13 @@ canvas {
   height:100%;
 }
 .social-nav{
-  bottom:0;
+  bottom:0%;
 }
 
 .v-logo{
   transform: rotate(-90deg);
-  bottom:40%;
-  left:-100%;
+  bottom:-35%;
+  left:-47%;
 }
 
 .social a{
@@ -225,31 +235,26 @@ canvas {
 }
 .holder:nth-child(2) div {
   transform: rotateX(-100deg);
-  background-color:blue;
 }
 .holder:nth-child(3) div {
   transform: rotateX(-100deg);
-  background-color:red;
 }
 .holder:nth-child(4) div {
   transform: rotateX(-100deg);
-  background-color:green;
+
 }
 .holder:nth-child(5) div {
   transform: rotateX(-10deg);
-  background-color:yellow;
 }
 .holder:nth-child(6) div {
-  transform: rotateX(-10deg);
-  background-color:white;
+
 }
 .holder:nth-child(7) div {
   transform: rotateX(-10deg);
-  background-color:black;
 }
 .holder:nth-child(8) div {
   transform: rotateX(-10deg);
-  background-color:pink;
+
 }
 
 
@@ -295,14 +300,11 @@ canvas {
   display: flex;
 }
 
-
-@keyframes blinker {
-  0% { color:red; }
-  50% { color:#F69ECB;
-    opacity: 0;}
-    100% { color:red; }
-  }
-
+.end{
+  top:5%;
+  right:7%;
+  width:300px;
+}
 
 
   @media screen and (max-width: 1260px){
