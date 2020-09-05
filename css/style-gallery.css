@@ -1,0 +1,185 @@
+
+.gallery {
+    margin: 200px auto 0 auto;
+
+/*  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+*/}
+
+div {
+	opacity: 0;
+    transition: opacity 1s;
+    transform: translate(0, 20px); 
+	transition: all 1s;
+
+/*  	margin: 10px;
+  	display: inline-block;
+  	position: relative;
+  	color:#fff;*/
+}
+
+div.visible{
+	opacity:1;
+	transform: translate(0, 0); 
+}
+
+
+/*.image img {
+  transition: filter 0.3s;
+}
+.image:hover img{
+  filter:grayscale(50%);
+}
+*/
+/*.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 112, 11, 0.5);
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 2;
+}
+.image h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  
+}
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.image:nth-child(1){
+  margin-right: auto;
+  z-index: 3;
+}
+.image:nth-child(2){
+  margin-right: auto;
+  z-index: 2;
+}
+.image:nth-child(3){
+  margin-left: auto;
+  z-index: 1;
+}
+
+.image:nth-child(4){
+  margin-left: auto;
+  z-index: 4;
+}
+
+.image:nth-child(5){
+  margin-left: auto;
+  z-index: 6;
+}
+
+.image:nth-child(6){
+  margin-left: auto;
+  z-index: 8;
+}
+
+.image:nth-child(7){
+  margin-left: auto;
+  z-index: 5;
+}
+
+.image:nth-child(8){
+  margin-left: auto;
+  z-index: 7;
+}
+
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}*/
+
+
+/*.one{
+  width:35%;
+  top:0;
+  left:0;
+}
+
+.two{
+  width:30%;
+  top:20%;
+  left:35%;
+}
+
+.three{
+  width:40%;
+  top:30%;
+  left:1%;
+  top:50%;
+  left:25%;
+}
+.four{
+  width:25%;
+  top:70%;
+  left:35%;
+}
+
+.five{
+  width:30%;
+  top:100%;
+  left:35%;
+}
+
+.six{
+  width:20%;
+  top:150%;
+  left:35%;
+}
+
+.seven{
+  width:35%;
+  top:170%;
+  left:35%;
+}
+
+.eight{
+  width:25%;
+  top:240%;
+  left:35%;
+}
+
+.nine{
+  width:35%;
+  top:270%;
+  left:35%;
+}
+
+.ten{
+  width:35%;
+  top:320%;
+  left:35%;
+}
+
+.eleven{
+  width:70%;
+  top:375%;
+  left:35%;
+}
+*/
+
+
+

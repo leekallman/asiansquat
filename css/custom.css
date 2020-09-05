@@ -1,0 +1,397 @@
+@font-face {
+  font-family: Syne Extra;
+  src: url(syne-extra.otf);
+}
+@font-face {
+  font-family: Syne Bold;
+  src: url(Syne-bold.otf);
+}
+
+@font-face {
+  font-family: Syne Regular;
+  src: url(syne-regular.otf);
+}
+
+@font-face {
+  font-family: Ancho;
+  src: url(AnchoGX.ttf);
+}
+
+
+body {
+	font-family: Syne Regular;
+	font-size: 20px;
+	line-height: 1.2;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: #FD700B;
+  color: #000;
+}
+
+.extra{
+  font-family: 'Syne Extra', georgia, serif;
+  font-weight: normal;
+}
+
+.bold{
+  font-family: 'Syne Bold', georgia, serif;
+  font-weight: normal;
+}
+
+.helvetica{
+  font-family: 'Helvetiva neue' serif;
+  font-weight: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+  .logo{
+    font-size: 200px;
+  }
+
+  /* popup */
+  .achtung {
+    background-color: #f44336;
+    width:600px;
+    margin: auto;
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    float: right;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+
+
+  .intro{
+    font-size: 60px;
+    word-spacing: 20px;
+    letter-spacing: -3px;
+    line-height: 0.9;
+  }
+
+
+  /* inline animation*/
+  .pan, .asia, .chair{
+    border-bottom: 6px dotted #F69ECB;
+    padding-bottom: -5px;
+    position:relative;
+  }
+
+
+  .mobility, .lisa{
+    border-bottom: 1px dotted;
+    padding-bottom: -5px;
+    position:relative;
+
+  }
+
+  .asia:hover::after{
+    position: absolute;
+    content: url(../images/map.jpg);
+    display: block;
+    width:100px;
+    transform: translate(700%, -60%);
+  }
+
+  .pan:hover::after{
+    position: absolute;
+    content: url(../images/pan.png);
+    display: block;
+    width:200px;
+    transform: translate(300%, -50%);
+  }
+  .chair:hover::after{
+    position: absolute;
+    content: url(../images/chair.png);
+    display: block;
+    width:200px;
+    transform: translate(470%, -80%);
+  }
+
+  .mobility:hover::before {
+    position: absolute;
+    width:200px;
+    background-color: #F69ECB;
+    padding:10px;
+    border-radius: 5px;
+    transform: translate(0, -100%);
+    content: attr(data-tooltip);
+  }
+
+  .lisa:hover::after{
+    position: absolute;
+    content: url(../images/me.jpg);
+    display: block;
+    transform: translate(200%, -100%) scale(0.7);
+    mix-blend-mode: color-burn;
+  }
+
+  .thumb{
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+
+  
+/* social nav*/
+.social{
+  top:0;
+  left:0;
+  font-size:36px;
+  height:100%;
+}
+.social-nav{
+  bottom:0;
+}
+
+.v-logo{
+  transform: rotate(-90deg);
+  bottom:40%;
+  left:-100%;
+}
+
+.social a{
+  color: #000;
+}
+.social a:hover{
+  color: #F69ECB;
+}
+
+.sketch{
+  width: 400px;
+}
+
+
+/*cursor*/
+@keyframes heartbeat{
+  0% { transform: translate(-50%, -50%) scale(1);}
+  50% { transform: translate(-50%, -50%) scale(1.5);}
+  100% { transform: translate(-50%, -50%) scale(1);}
+}
+
+.eyes{
+  position: absolute;
+  top:0;
+  left:0;
+  animation: heartbeat 2s infinite;
+}
+
+.eye{
+ background-color: #fff;
+ width: 30px;
+ height:30px;
+ /* display: block;*/
+ margin:0 5px;
+ border-radius: 50%;
+ position: absolute;
+}
+
+.eyes .eye::before{
+  content:'';
+  position: absolute;
+  top:50%;
+  left:25%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height:15px;
+  background: #000;
+  border-radius: 50%;
+}
+
+
+/* fold */
+.holder{
+  perspective: 600px;
+  overflow: hidden;
+}
+.holder div{
+  width: 100%;
+  height: 800px;
+  transform-origin: 50% 0;
+}
+.holder:nth-child(even) div {
+}
+.holder:nth-child(2) div {
+  transform: rotateX(-100deg);
+  background-color:blue;
+}
+.holder:nth-child(3) div {
+  transform: rotateX(-100deg);
+  background-color:red;
+}
+.holder:nth-child(4) div {
+  transform: rotateX(-100deg);
+  background-color:green;
+}
+.holder:nth-child(5) div {
+  transform: rotateX(-10deg);
+  background-color:yellow;
+}
+.holder:nth-child(6) div {
+  transform: rotateX(-10deg);
+  background-color:white;
+}
+.holder:nth-child(7) div {
+  transform: rotateX(-10deg);
+  background-color:black;
+}
+.holder:nth-child(8) div {
+  transform: rotateX(-10deg);
+  background-color:pink;
+}
+
+
+
+/* how to do*/
+.how-list, .why-list{
+  column-count: 2;
+  column-gap: 100px;
+}
+.how h1{
+  font-size: 80px;
+  line-height: 0.9;
+  border-bottom: 2px solid #000;
+}
+
+.howto{
+  display: block;
+  padding-left:600px;
+}
+.dothe{
+  display: block;
+  padding-left:400px;
+}
+.as{
+  display: block;
+  padding-left:100px;
+}
+.practice{
+  display: block;
+  /*  padding-left:100px;*/
+}
+.makes{
+  display: block;
+  padding-left:100px;
+}
+.perfect{
+  display: block;
+  padding-left:100px;
+}
+
+/* practice */
+.practice-vid{
+  display: flex;
+}
+
+
+@keyframes blinker {
+  0% { color:red; }
+  50% { color:#F69ECB;
+    opacity: 0;}
+    100% { color:red; }
+  }
+
+
+
+  @media screen and (max-width: 1260px){
+
+    .logo {
+      font-size: 100px;
+    }
+    .hero{
+      vertical-align: middle;
+    }
+
+    .intro{
+      font-size: 40px;
+      word-spacing: 10px;
+      letter-spacing: 0px;
+      line-height: 0.9;
+    }
+
+    .pan, .asia, .chair{
+      border-bottom: 3px dotted #F69ECB;
+      padding-bottom: -5px;
+    }
+
+    .asia:hover::after{
+      width:100px;
+      transform: translate(50%, 10%);
+    }
+
+    .pan:hover::after{
+      width:200px;
+      transform: translate(100%, 0%);
+    }
+    .chair:hover::after{
+      width:200px;
+      transform: translate(0%, 0%);
+    }
+
+
+    .mobility:hover::before {
+      transform: translate(0, -100%);
+    }
+
+    .lisa:hover::after{
+      transform: translate(200%, -100%) scale(0.7);
+    }
+
+    .how h1, .why h1, .practice-vid h1{
+      font-size: 44px;
+    }
+
+    .howto{
+      padding-left:220px;
+    }
+
+    .dothe{
+      padding-left:150px;
+    }
+
+    .as{
+      padding-left:0px;
+    }
+
+    .practice-vid{
+      flex-direction:column;
+    }
+
+    .makes{
+      display: block;
+      padding-left:100px;
+    }
+
+    .perfect{
+      display: block;
+      padding-left:100px;
+    }
+
+
+    .thumb{
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    .sketch{
+      width: 300px;
+      padding-left: 100px;
+    }
+
+
+  }
+  
+ @media screen and (max-width: 990px){
+
+
