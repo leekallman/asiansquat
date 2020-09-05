@@ -10,7 +10,7 @@ $(document).on("scroll", function() {
   var tags = $("div")
 
 //loop over each of the tags to check
-for (var i = 0; i < tags.legnth; i++){
+for (var i = 0; i < tags.length; i++){
   //Three parts to a loop; where it starts, where it will end and how it steps.
   var tag = tags[i]
   //Get the individual tag in our list of section tags.

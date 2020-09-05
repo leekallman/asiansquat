@@ -168,7 +168,7 @@ canvas {
 
 .v-logo{
   transform: rotate(-90deg);
-  bottom:-35%;
+  bottom:-30%;
   left:-47%;
 }
 
@@ -176,7 +176,7 @@ canvas {
   color: #000;
 }
 .social a:hover{
-  color: #F69ECB;
+  color: #fff;
 }
 
 .sketch{
