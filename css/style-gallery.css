@@ -9,10 +9,10 @@
   padding: 0 10px 0 10px;
 */}
 
-div {
+.image{
 	opacity: 0;
-    transition: opacity 1s;
-    transform: translate(0, 20px); 
+  transition: opacity 1s;
+   transform: translate(0, 20px); 
 	transition: all 1s;
 
 /*  	margin: 10px;
@@ -21,9 +21,9 @@ div {
   	color:#fff;*/
 }
 
-div.visible{
-	opacity:1;
-	transform: translate(0, 0); 
+.fadeIn{
+  opacity:1;
+  transform: translate(0, 0); 
 }
 
 
