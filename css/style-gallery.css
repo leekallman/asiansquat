@@ -1,185 +1,386 @@
+body{
+  background-color: #ffffff;
+  transition: background-color 1s ease;
+  box-sizing: border-box;
+}
+
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.hidden{
+  transform: translateY(-100%);
+}
+
+.progress{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 0.75em;
+}
+/*.bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #FD620B;  
+}*/
 
 .gallery {
-    margin: 200px auto 0 auto;
-
-/*  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0 10px 0 10px;
-*/}
+  margin: 0 auto 0 auto;
+}
 
 .image{
-	opacity: 0;
-  transition: opacity 1s;
-   transform: translate(0, 20px); 
-	transition: all 1s;
-
-/*  	margin: 10px;
-  	display: inline-block;
-  	position: relative;
-  	color:#fff;*/
+  position: absolute;
+  color:#fff;
 }
 
-.fadeIn{
-  opacity:1;
-  transform: translate(0, 0); 
-}
-
-
-/*.image img {
+.image img {
   transition: filter 0.3s;
+  transform: scale(0.7);
 }
 .image:hover img{
   filter:grayscale(50%);
 }
-*/
-/*.overlay {
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(253, 112, 11, 0.5);
   opacity: 0;
   transition: all 0.3s;
   z-index: 2;
 }
 .image h2 {
-  font-size: 40px;
-  line-height: 1.2;
+  z-index: 200;
+  font-size: 1.25em;
   position: absolute;
-  left: -15px;
-  top: -15px;
-  
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 45%;
+  text-align: center;
 }
 .image:hover .overlay {
   opacity: 1;
 }
 
+
 .image:nth-child(1){
-  margin-right: auto;
-  z-index: 3;
+  top:20%;
+  left: 10%;
+  z-index: 1;
 }
+
+.image:nth-child(1) img{
+  transform:scale(1);
+
+}
+
 .image:nth-child(2){
-  margin-right: auto;
-  z-index: 2;
+  top:60%;
+  left:60%;
 }
+
+/* child */
 .image:nth-child(3){
-  margin-left: auto;
+  top:85%;
+  left:15%;
   z-index: 1;
 }
 
 .image:nth-child(4){
-  margin-left: auto;
-  z-index: 4;
+  width:400px;
+  top:110%;
+  z-index: 2;
 }
 
 .image:nth-child(5){
-  margin-left: auto;
-  z-index: 6;
+  width:300px;
+  top:130%;
+  left:45%;
+  z-index: 2;
 }
 
+/*man*/
 .image:nth-child(6){
-  margin-left: auto;
-  z-index: 8;
+  top:150%;
+  left:60%;
+  z-index: 3;
+}
+.image:nth-child(6) img{
+  transform:scale(1.2);
 }
 
 .image:nth-child(7){
-  margin-left: auto;
-  z-index: 5;
+  top:160%;
+  left:0%;
+  z-index: 2;
 }
 
 .image:nth-child(8){
-  margin-left: auto;
-  z-index: 7;
+  top:215%;
+  left:40%;
+  z-index: 9;
+}
+.image:nth-child(8) img{
+  transform:scale(1.2);
 }
 
-
-.come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 0.6s;
-}
-.already-visible {
-  transform: translateY(0);
-  animation: none;
+.image:nth-child(9){
+  top:230%;
+  left:60%;
+  z-index: 10;
 }
 
-@keyframes come-in {
-  to { transform: translateY(0); }
-}*/
+/*man*/
+.image:nth-child(10){
+  top:232%;
+  left:20%;
 
-
-/*.one{
-  width:35%;
-  top:0;
-  left:0;
 }
 
-.two{
-  width:30%;
-  top:20%;
+.image:nth-child(11){
+  top:290%;
+  left:45%;
+
+}
+
+.image:nth-child(11) img{
+  transform:scale(1.2);
+}
+
+.image:nth-child(12){
+  top:300%;
+  left:30%;
+
+}
+.image:nth-child(12) img{
+  transform:scale(1.1);
+}
+/*obama*/
+.image:nth-child(13){
+  top:362%;
+
+}
+
+.image:nth-child(14){
+  top:380%;
+  left:50%;
+
+}
+.image:nth-child(14) img{
+  transform:scale(0.5);
+}
+
+/*subway*/
+.image:nth-child(15){
+  top:418%;
+  left:75%;
+
+}
+.image:nth-child(15) img{
+  transform:scale(0.5);
+}
+
+/*tree*/
+.image:nth-child(16){
+  top:430%;
+  left:10%;
+}
+
+/*police*/
+.image:nth-child(17){
+  top:510%;
+  left:5%;
+
+}
+
+/*museum*/
+.image:nth-child(18){
+  top:540%;
+  left:30%;
+
+}
+.image:nth-child(19){
+  top:560%;
+  left:10%;
+
+}
+
+.image:nth-child(20){
+  top:590%;
+  left:5%;
+
+}
+
+.image:nth-child(21){
+  top:590%;
   left:35%;
+
+}
+.image:nth-child(21) img{
+  transform:scale(0.5);
 }
 
-.three{
-  width:40%;
-  top:30%;
-  left:1%;
-  top:50%;
-  left:25%;
-}
-.four{
-  width:25%;
-  top:70%;
-  left:35%;
+.social a:hover{
+  color: #F69ECB;
 }
 
-.five{
-  width:30%;
-  top:100%;
-  left:35%;
+.v-logo a{
+  color: #F69ECB;
+}
+.v-logo a:hover{
+  color: #000;
 }
 
-.six{
-  width:20%;
-  top:150%;
-  left:35%;
-}
+@media screen and (max-width: 1260px){
+  .image:nth-child(1) img{
+    transform:scale(0.5);
 
-.seven{
-  width:35%;
-  top:170%;
-  left:35%;
-}
+  }
 
-.eight{
-  width:25%;
-  top:240%;
-  left:35%;
-}
+  .image:nth-child(2){
+    top:60%;
+    left:60%;
+    z-index: 2;
+  }
 
-.nine{
-  width:35%;
+  /*newspaper*/
+  .image:nth-child(4){
+    width:400px;
+    top:110%;
+    z-index: 5;
+  }
+
+  .image:nth-child(5){
+    width:300px;
+    top:130%;
+    left:45%;
+    z-index: 6;
+  }
+
+  /*man*/
+  .image:nth-child(6) img{
+    transform:scale(0.9);
+  }
+
+/*leek*/
+  .image:nth-child(7) img{
+    transform:scale(0.5);
+  }
+
+/*indian*/
+  .image:nth-child(8) img{
+    top:250%;
+    z-index: 6;
+    transform:scale(0.9);
+  }
+
+ .image:nth-child(10){
+    left:20%;
+    z-index: 1;
+  }
+ .image:nth-child(11){
   top:270%;
-  left:35%;
+}
+  .image:nth-child(11) img{
+    transform:scale(0.8);
+  }
+ 
+  .image:nth-child(12) {
+    left:20%;
+    top:280%;
+  }
+  /*obama*/
+  .image:nth-child(13){
+    top:320%;
+  }
+
+  .image:nth-child(14){
+    top:365%;
+    left:50%;
+    z-index: 100;
+  }
+
+  /*subway*/
+  .image:nth-child(15){
+    top:375%;
+    left:7%;
+  }
+  .image:nth-child(15) img{
+    transform:scale(0.5);
+  }
+
+  /*tree*/
+  .image:nth-child(16){
+    top:420%;
+
+  }
+
+  /*police*/
+  .image:nth-child(17){
+    top:470%;
+    left:-5%;
+  }
+
+  /*museum*/
+  .image:nth-child(18){
+    top:500%;
+    left:30%;
+    z-index: 16;
+  }
+  .image:nth-child(19){
+    top:520%;
+    left:10%;
+    z-index: 17;
+  }
+
+  .image:nth-child(20){
+    top:550%;
+    left:5%;
+    z-index: 17;
+  }
+
+  .image:nth-child(21){
+    top:570%;
+    left:35%;
+    z-index: 17;
+  }
+  .image:nth-child(21) img{
+    transform:scale(0.5);
+  }
 }
 
-.ten{
-  width:35%;
-  top:320%;
-  left:35%;
+@media screen and (max-width: 768px){
+  .image h2{
+    font-size: 12px;
+  }
+
+/*leek*/
+  .image:nth-child(7){
+    left:0;
+  }
+  .image:nth-child(10){
+    top:210%;
+    left:0%;
+  }
+ .image:nth-child(9){
+  top:200%;
+}
+ .image:nth-child(19){
+  top:530%;
 }
 
-.eleven{
-  width:70%;
-  top:375%;
-  left:35%;
+ .image:nth-child(21){
+  top:580%;
 }
-*/
-
-
-

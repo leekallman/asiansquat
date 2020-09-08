@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- tachyons -->
 	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
 
 	<link rel="stylesheet" href="css/custom.css"/>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	<!-- p5 -->
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,19 +21,23 @@
 
 	<title>asiansquat</title>
 </head>
-<body class="ph4 ph5-l">
+<body class="ph3 ph5-l">
 	<main>
+		<a href="#" class="scroll w-100 height-100" style="display: none;"><span></span></a>
+
 		<header class="site-header w-100">
 			<div class="achtung white pa3">
 				<span class="closebtn b" onclick="this.parentElement.style.display='none';">&times;</span> 
 				<strong>Achtung!</strong> No Accessibility or UX has been considered.
 			</div>
 		</header>
+
 		<section class="hero w-100 holder">
 			<div>
-<!-- 				<script type="text/javascript" src="js/logo.js"></script> -->
+									<script type="text/javascript" src="js/logo.js"></script>
 			</div>
 		</section>
+
 		<section class="intro w-100 holder">
 			<div class="ph5 pt6-l">
 				<p class="intro mv2 ttu">The Asian squat is a deep squat performed by people living in <span class="asia">Asian countries</span> for both practical and cultural reasons.</p>
@@ -52,13 +58,9 @@
 				<h2 class="subhead ttu">step 1-3</h2>
 				<ol class="how-list">
 					<li class="bold">Stand slightly wider than shoulder-width. Flare your toes out slightly.</li><br>
-
 					<li class="bold">Crack at your hips and knees at the same time, and begin lowering yourself to the floor.</li>
-
 					<p class="">Think about keeping your body-weight over the midline of the foot to ensure you’re not rocking forward or backward.</p>
-
 					<li class="bold">Squat as deep as you can, while trying to keep your torso relatively upright and your heels on the ground. Rest your arms on your knees.</li>
-
 					<p class="">Hold in this position for several minutes and try to feel your muscles ‘relax’.</p>
 
 					<img src="images/sketch.png" class="sketch db" alt="sketch of a right /wrong asian squat">
@@ -72,17 +74,11 @@
 				<ol class="why-list">
 					<li class="bold">You don’t have the right limb length proportions.</li>
 					<p class="">Longer upper thigh bone than lower leg bone makes it harder. So does long legs combined with short torso.</p>
-
-
 					<li class="bold">You don’t have the adequate mobility</li>
-
 					<p class="">The Asian squat requires a superior level of <span class="mobility di" data-tooltip="In a 2009 study, it was shown that a person’s level of ankle mobility is strongly associated with the ability to assume a proper deep squatting posture.">mobility</span> in the hips and ankles in order to perform correctly.</p>
-
 					<li class="bold">You haven’t practiced the squat enough</li>
-
 					<p class="">If you’re able to squat deep enough, but you just don’t have the stamina to hold the position, then it’s simply due to the fact that you haven’t practiced the position enough..</p>
 				</ol>
-
 			</div>
 		</section>
 		<section class="w-100 holder">
@@ -95,21 +91,23 @@
 				</div>
 			</div>
 		</section>
-		<section class="w-100 holder tc">
+		<section class="w-100 holder">
 			<div class="bye">
-				<img src="images/teen.png" alt="guy sqatting">
 
-				<h2 class="end f4 f3-l mono absolute tr">
-					The content is sourced from the <span class="internet">internet </span><i class="fa fa-angellist"></i><br>
-					Design and asian knowledge kudos to <span class="lisa">Lisa Lee Källman</span>
-				</h2>
+				<img src="images/teen.png" alt="guy sqatting" class="mt4">
+
+				<div class="right pt5">
+					<span class="mt6 btn tc"><a class="blink link extra f2 w-100 height-100 pa3" href="gallery.html">GALLERY</a></span>
+
+					<h2 class="end f4 f3-l tc pt5">
+						The content is sourced from the <span class="internet">internet </span><i class="fa fa-angellist"></i><br>
+						Design and asian knowledge kudos to <span class="lisa">Lisa Lee Källman</span>
+					</h2>
+				</div>
 			</div>
 		</section>
 
-		<div class="social Bold fixed pa3">
-			<div class="v-logo relative f3 f2-l extra white lh-title">
-				asian squat
-			</div>
+		<div class="social fixed pa3">
 			<div class="social-nav absolute">
 				<a href= "mailto:lisa.lee.kallman@hyperisland.se" class="email link grow db"><i class="fa fa-envelope mb3"></i>
 				</a>
@@ -124,16 +122,29 @@
 				</a>
 			</div>
 		</div>
+		<div class="v-logo fixed f3 f2-l extra lh-title">
+			<a href="#" class="logo link db white">asian squat</a>
+		</div>
 
 		<div class="eyes">
 			<div class="eye"></div>
 			<div class="eye"></div>
 		</div>
 
-		<a href="gallery.html" class="pa3">GALLERY</a>
-		
-		<script type="text/javascript" src="js/fold.js"></script>
-	</main>
+<!-- 
+		<script>
+			// if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			// // if (window.width < 479) {
+   //      	$('body').remove('<script type="text/javascript" src="js/fold.js">');
+   //  	}
+
+   let mql = window.matchMedia('(max-width: 400px)');
+			if (mql.matches) { // do flipbook.js } else { // do something else } 
+		</script> -->
+
+	<script type="text/javascript" src="js/fold.js"></script>
+	<script type="text/javascript" src="js/back.js"></script>
+</main>
 
 </body>
 </html>

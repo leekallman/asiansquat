@@ -1,5 +1,4 @@
 // moving cursor
-
 const cursor = document.querySelector(".eyes")
 let mouseX = 0
 let mouseY = 0
