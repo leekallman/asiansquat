@@ -38,205 +38,12 @@ body {
   font-weight: normal;
 }
 
+span {
+  cursor: pointer;
+}
 
-canvas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
-
-
-  /* popup */
-  .achtung {
-    background-color: #f44336;
-    width:600px;
-    margin: auto;
-  }
-
-  .closebtn {
-    margin-left: 15px;
-    float: right;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .closebtn:hover {
-    color: black;
-  }
-
-
-  .intro{
-    font-size: 60px;
-    word-spacing: 20px;
-    letter-spacing: -3px;
-    line-height: 0.9;
-  }
-
-  span {
-    cursor: pointer;
-  }
-
-  /* inline animation*/
-  .pan, .asia, .chair{
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: #F69ECB;
-    position:relative;
-  }
-
-
-  .mobility, .lisa, .internet{
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: #F69ECB;
-    position:relative;
-
-  }
-
-  .asia:hover::after{
-    position: absolute;
-    content: url(../images/map.jpg);
-    display: block;
-    width:100px;
-    transform: translate(500%, -60%);
-  }
-
-  .pan:hover::after{
-    position: absolute;
-    content: url(../images/pan.png);
-    display: block;
-    width:200px;
-    transform: translate(140%, -30%);
-  }
-
-  .chair:hover::after{
-    position: absolute;
-    content: url(../images/chair.png);
-    display: block;
-    width:200px;
-    transform: translate(470%, -80%);
-  }
-
-  .mobility:hover::before {
-    position: absolute;
-    width:200px;
-    background-color: #F69ECB;
-    padding:10px;
-    border-radius: 5px;
-    transform: translate(0, -100%);
-    content: attr(data-tooltip);
-  }
-
-
-  .sketch{
-    width: 400px;
-  }
-
-  .lisa:hover::after {
-    position: absolute;
-    content: url(../images/me2.png);
-    display: block;
-    transform: translate(-139%, -200%) scale(0.95);
-    z-index: 1000;
-  }
-
-  .internet:hover::after {
-    position: absolute;
-    content: url(https://media.giphy.com/media/Ecz51X5IAD5DO/giphy.gif);
-    transform: translate(10%, -40%) scale(0.5);
-    z-index: 1000;
-  }
-
-
-  .bye{
-    display: flex;
-  }
-
-
-  .right{
-    text-align: center;
-    width:400px;
-  }
-
-  .blink{
-    border: dashed;
-    animation:blinker 2s infinite ease-in-out;
-    border-radius: 40%;
-  }
-  @-webkit-keyframes blinker{
-    0%{     color: #5BCCC5}
-    50%{   color: #F69ECB}
-    100%{   color: #5BCCC5}
-  }
-
-
-  /* social nav*/
-  .social{
-    top:0;
-    left:0;
-    font-size:36px;
-    height:100%;
-    width:100px;
-  }
-  .social-nav{
-    bottom:0%;
-  }
-
-  .v-logo{
-    transform: rotate(-90deg);
-    bottom:60%;
-    left:-180px;
-  }
-  .v-logo a{
-    color: #fff;
-  }
-  .v-logo a:hover{
-    color: #000;
-  }
-
-  .social-nav a{
-    color: #000;
-  }
-  .social-nav a:hover{
-    color: #fff;
-  }
-
-
-  /*cursor*/
-  @keyframes heartbeat{
-    0% { transform: translate(-50%, -50%) scale(1);}
-    50% { transform: translate(-50%, -50%) scale(1.5);}
-    100% { transform: translate(-50%, -50%) scale(1);}
-  }
-
-  .eyes{
-    position: absolute;
-    top:0;
-    left:0;
-    animation: heartbeat 2s infinite;
-  }
-
-  .eye{
-   background-color: #fff;
-   width: 30px;
-   height:30px;
-   /* display: block;*/
-   margin:0 5px;
-   border-radius: 50%;
-   position: absolute;
- }
-
- .eyes .eye::before{
-  content:'';
-  position: absolute;
-  top:50%;
-  left:25%;
-  transform: translate(-50%, -50%);
-  width: 15px;
-  height:15px;
-  background: #000;
-  border-radius: 50%;
+.intro .wrapper{
+  padding-top: 160px;
 }
 
 
@@ -245,79 +52,191 @@ canvas {
   perspective: 600px;
   overflow: hidden;
 }
-.holder div{
+
+.holder div {
   width: 100%;
   height: 800px;
   transform-origin: 50% 0;
 }
-.holder:nth-child(even) div {
-}
-.holder:nth-child(2) div {
-  transform: rotateX(-100deg);
-}
-.holder:nth-child(3) div {
-  transform: rotateX(-100deg);
-}
-.holder:nth-child(4) div {
-  transform: rotateX(-100deg);
 
-}
-.holder:nth-child(5) div {
-  transform: rotateX(-10deg);
-}
-.holder:nth-child(6) div {
+/*hero*/
+/*canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
 
-}
-.holder:nth-child(7) div {
-  transform: rotateX(-10deg);
-}
-.holder:nth-child(8) div {
-  transform: rotateX(-10deg);
-
+.hero-head {
+  position: relative;
+  font-size: 10em;
+  letter-spacing: 0.3em;
 }
 
+.text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
 
+.letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+/* popup */
+.achtung {
+  background-color: #f44336;
+  top:4%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:1000;
+}
+
+.closebtn {
+  margin-left: 1.33em;
+  float: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+/*section one*/
+.intro{
+  font-size: 1.7em;
+  word-spacing: 0.2em;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+/* inline animation*/
+.pan, .asia, .chair{
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #F69ECB;
+  position:relative;
+}
+
+.mobility, .lisa, .internet{
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #F69ECB;
+  position:relative;
+}
+
+.asia:hover::after{
+  position: absolute;
+  content: url(../images/map.jpg);
+  display: block;
+  width: 5em;
+  transform: translate(120%, 0%);
+}
+
+.chair:hover::after{
+  position: absolute;
+  content: url(../images/chair.png);
+  display: block;
+  width: 10em;
+  transform: translate(140%, -100%);
+}
+.pan:hover::after{
+  position: absolute;
+  content: url(../images/pan.png);
+  display: block;
+  width: 10em;
+  transform: translate(50%, -30%);
+}
+.mobility:hover::before {
+  position: absolute;
+  width: 10em;
+  background-color: #F69ECB;
+  padding:0.5em;
+  border-radius: 0.4em;
+  transform: translate(0, -100%);
+  content: attr(data-tooltip);
+}
+
+.sketch{
+  width: 20em;
+}
+
+.lisa:hover::after {
+  position: absolute;
+  content: url(../images/me2.png);
+  display: block;
+  transform: translate(-156%, -170%);
+  z-index: 1000;
+}
+
+.internet:hover::after {
+  position: absolute;
+  content: url(https://media.giphy.com/media/Ecz51X5IAD5DO/giphy.gif);
+  transform: translate(-70%, 40%) scale(0.5);
+  z-index: 1000;
+}
+
+/* practice */
+.practice-vid, .bye{
+  display: flex;
+}
+
+.right{
+  text-align: center;
+}
+
+.blink{
+  border: dashed;
+  animation:blinker 2s infinite ease-in-out;
+  border-radius: 40%;
+}
+@-webkit-keyframes blinker{
+  0%{     color: #5BCCC5}
+  50%{    color: #F69ECB}
+  100%{   color: #5BCCC5}
+}
 
 /* how to do*/
 .how-list, .why-list{
   column-count: 2;
-  column-gap: 100px;
+  column-gap: 5em;
 }
 .how h1{
-  font-size: 80px;
+  font-size: 3em;
   line-height: 0.9;
-  border-bottom: 2px solid #000;
+  border-bottom: 0.03em solid #000;
 }
 
 .howto{
   display: block;
-  padding-left:600px;
+  padding-left:8em;
 }
 .dothe{
   display: block;
-  padding-left:400px;
+  padding-left:5em;
 }
 .as{
   display: block;
-  padding-left:100px;
+  padding-left:1em
 }
 .practice{
   display: block;
-  /*  padding-left:100px;*/
+  padding-left: 1em;
 }
 .makes{
   display: block;
-  padding-left:100px;
+  padding-left: 3em;
 }
 .perfect{
   display: block;
-  padding-left:100px;
+  padding-left: 4em;
 }
 
-/* practice */
-.practice-vid{
-  display: flex;
-}
+
 
 /*back to top*/
 .scroll {
@@ -333,32 +252,96 @@ canvas {
   position:absolute;
   top:50%;
   left:50%;
-  margin-left:-8px;
-  margin-top:-12px;
+  margin-left:-0.4em;
+  margin-top:-0.6em;
   height:0;
   width:0;
-  border:8px solid transparent;
+  border:0.4em solid transparent;
   border-bottom-color:#000;
 }
 
+/* social nav*/
+.social{
+  top:0;
+  left:0;
+  font-size: 1.8em;
+  height: 100%;
+  width: 5em;
+}
+.social-nav{
+  bottom:0%;
+}
 
+.v-logo{
+  transform: rotate(-90deg);
+  bottom:63%;
+  left:-3.9em;
+}
+.v-logo a{
+  color: #fff;
+}
+.v-logo a:hover{
+  color: #000;
+}
+
+.social-nav a{
+  color: #000;
+}
+.social-nav a:hover{
+  color: #fff;
+}
+
+
+/*cursor*/
+.eyes{
+  position: absolute;
+  display: flex;
+  top:0;
+  left:0;
+  z-index: 10000;
+}
+
+.eye{
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+  width: 50px;
+  height:50px;
+  margin:0 5px;
+  border-radius: 50%;
+
+}
+
+.eyes .eye::before{
+  content:'';
+  position: absolute;
+  top:50%;
+  left:30%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height:30px;
+  background: #000;
+  border-radius: 50%;
+}
 
 @media screen and (max-width: 1260px){
-
   .hero{
     vertical-align: middle;
   }
 
+  .hero-head {
+  font-size: 8em;
+  }
+
+
   .intro{
-    font-size: 40px;
-    word-spacing: 10px;
-    letter-spacing: 0px;
+    word-spacing: 0.2em;
     line-height: 0.9;
   }
 
   .asia:hover::after{
     width:100px;
-    transform: translate(50%, 10%);
+    transform: translate(300%, -10%);
   }
 
   .pan:hover::after{
@@ -366,13 +349,11 @@ canvas {
     transform: translate(110%, 0%);
   }
   .chair:hover::after{
-    width:200px;
-    transform: translate(0%, 0%);
+    transform: translate(100%, -100%);
   }
 
-
   .mobility:hover::before {
-    transform: translate(0, -100%);
+    transform: translate(-100%, 00%);
   }
 
   .lisa:hover::after{
@@ -380,7 +361,7 @@ canvas {
   }
 
   .how h1, .why h1, .practice-vid h1{
-    font-size: 44px;
+    font-size: 2.2em;
   }
 
   .howto{
@@ -395,9 +376,6 @@ canvas {
     padding-left:0px;
   }
 
-  .practice-vid{
-    flex-direction:column;
-  }
 
   .makes{
     display: block;
@@ -409,50 +387,94 @@ canvas {
     padding-left:100px;
   }
 
-
-/*  .thumb{
-    transform: translate(-50%, -50%) scale(0.5);
-    }*/
-
-    .sketch{
-      width: 300px;
-      padding-left: 100px;
-    }
-
-    video{
-      transform: scale(0.7);
-    }
-
-    .v-logo{
-      transform: rotate(-90deg);
-      bottom:60%;
-      left:-100px;
-    }
+  .sketch{
+    width: 15em;
+    padding-left: 5em;
   }
 
-  @media screen and (max-width: 990px){
-
-    .intro{
-      font-size: 36px;
-    }
-
-    .how-list, .why-list{
-      column-count: 1;
-    }
-
-    body{
-      font-size: 14px;
-    }
+  video{
+    transform: scale(0.7);
   }
 
-  @media screen and (max-width: 768px){
-
-    .sketch{
-      width: 300px;
-      padding-left: 0px;
-    }
-
+  .v-logo{
+    transform: rotate(-90deg);
+    bottom:60%;
+    left:-3.7em;
   }
+
+  .bye img{
+    height:auto;
+    width:400px;
+  }
+
+}
+
+@media screen and (max-width: 990px){
+
+  body{
+    font-size: 14px;
+  }
+
+  .holder{
+    perspective: 600px;
+    overflow: hidden;
+  }
+  .hero-head {
+  font-size: 8em;
+  }
+
+  .intro{
+    font-size: 1.6em; 
+    word-spacing: 0.1em;
+    letter-spacing: -0.05em;
+    line-height: 1.2;
+  }
+
+  .how-list, .why-list{
+    column-count: 1;
+  }
+
+
+}
+
+@media screen and (max-width: 600px){
+  body{
+    font-size: 12px;
+  }
+
+  .holder div {
+    height: auto;
+  }
+
+  .hero-head {
+  font-size: 6em;
+  }
+
+  .how h1{
+    padding-bottom: 20px;
+  }
+  .howto{
+    padding-left:150px;
+  }
+
+  .dothe{
+    padding-left:100px;
+  }
+
+  .sketch{
+    /*      width: 300px;*/
+    padding-left: 0em;
+  }
+
+  .practice-vid{
+
+    flex-direction:column;
+  }
+  .bye, .practice-vid{
+    display: block
+  }
+
+}
 
 
 

@@ -1,3 +1,4 @@
+
 const holders = document.querySelectorAll(".holder")
 
 window.addEventListener("scroll", function () {
@@ -11,9 +12,13 @@ window.addEventListener("scroll", function () {
     
     const angle = Math.min(0, start + diff * (pixels / step))
     
-    const fold = holder.querySelector("div")
+    const fold = holder.querySelector("div:first-of-type")
     
-    fold.style.transform = `rotateX(${angle}deg)`    
-  })
-  
+
+if (window.matchMedia("(min-width:600px)").matches) {
+    fold.style.transform = `rotateX(${angle}deg)` 
+
+  }
+
+})
 })
