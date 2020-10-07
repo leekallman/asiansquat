@@ -31,291 +31,162 @@ header{
   width: 0;
   height: 3px;
   background-color: #FD620B;  
-}*/
+  }*/
 
-.gallery {
-  margin: 0 auto 0 auto;
-}
+  .gallery {
+    margin: 0 auto 0 auto;
+  }
 
-.image{
-  position: absolute;
-  color:#fff;
-}
+  .image{
+    position: absolute;
+    color:#fff;
+  }
 
-.image img {
-  transition: filter 0.3s;
-  transform: scale(0.7);
-}
-.image:hover img{
-  filter:grayscale(50%);
-}
+  .image img {
+    transition: filter 0.3s;
+    transform: scale(0.7);
+  }
+  .image:hover img{
+    filter:grayscale(50%);
+  }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.3s;
-  z-index: 2;
-}
-.image h2 {
-  z-index: 200;
-  font-size: 1.25em;
-  position: absolute;
-  text-transform: uppercase;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 45%;
-  text-align: center;
-}
-.image:hover .overlay {
-  opacity: 1;
-}
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 2;
+  }
+  .image h2 {
+    z-index: 200;
+    font-size: 1.25em;
+    position: absolute;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
+    text-align: center;
+  }
+  .image:hover .overlay {
+    opacity: 1;
+  }
 
 
-.image:nth-child(1){
-  top:20%;
-  left: 10%;
-  z-index: 1;
-}
+  .image:nth-child(1){
+    top:20%;
+    left: 10%;
+    z-index: 1;
+  }
 
-.image:nth-child(1) img{
-  transform:scale(1);
-
-}
-
-.image:nth-child(2){
-  top:60%;
-  left:60%;
-}
-
-/* child */
-.image:nth-child(3){
-  top:85%;
-  left:15%;
-  z-index: 1;
-}
-
-.image:nth-child(4){
-  width:400px;
-  top:110%;
-  z-index: 2;
-}
-
-.image:nth-child(5){
-  width:300px;
-  top:130%;
-  left:45%;
-  z-index: 2;
-}
-
-/*man*/
-.image:nth-child(6){
-  top:150%;
-  left:60%;
-  z-index: 3;
-}
-.image:nth-child(6) img{
-  transform:scale(1.2);
-}
-
-.image:nth-child(7){
-  top:160%;
-  left:0%;
-  z-index: 2;
-}
-
-.image:nth-child(8){
-  top:215%;
-  left:40%;
-  z-index: 9;
-}
-.image:nth-child(8) img{
-  transform:scale(1.2);
-}
-
-.image:nth-child(9){
-  top:230%;
-  left:60%;
-  z-index: 10;
-}
-
-/*man*/
-.image:nth-child(10){
-  top:232%;
-  left:20%;
-
-}
-
-.image:nth-child(11){
-  top:290%;
-  left:45%;
-
-}
-
-.image:nth-child(11) img{
-  transform:scale(1.2);
-}
-
-.image:nth-child(12){
-  top:300%;
-  left:30%;
-
-}
-.image:nth-child(12) img{
-  transform:scale(1.1);
-}
-/*obama*/
-.image:nth-child(13){
-  top:362%;
-
-}
-
-.image:nth-child(14){
-  top:380%;
-  left:50%;
-
-}
-.image:nth-child(14) img{
-  transform:scale(0.5);
-}
-
-/*subway*/
-.image:nth-child(15){
-  top:418%;
-  left:75%;
-
-}
-.image:nth-child(15) img{
-  transform:scale(0.5);
-}
-
-/*tree*/
-.image:nth-child(16){
-  top:430%;
-  left:10%;
-}
-
-/*police*/
-.image:nth-child(17){
-  top:510%;
-  left:5%;
-
-}
-
-/*museum*/
-.image:nth-child(18){
-  top:540%;
-  left:30%;
-
-}
-.image:nth-child(19){
-  top:560%;
-  left:10%;
-
-}
-
-.image:nth-child(20){
-  top:590%;
-  left:5%;
-
-}
-
-.image:nth-child(21){
-  top:590%;
-  left:35%;
-
-}
-.image:nth-child(21) img{
-  transform:scale(0.5);
-}
-
-.social a:hover{
-  color: #F69ECB;
-}
-
-.v-logo a{
-  color: #F69ECB;
-}
-.v-logo a:hover{
-  color: #000;
-}
-
-@media screen and (max-width: 1260px){
   .image:nth-child(1) img{
-    transform:scale(0.5);
+    transform:scale(1);
 
   }
 
   .image:nth-child(2){
     top:60%;
     left:60%;
-    z-index: 2;
   }
 
-  /*newspaper*/
+  /* child */
+  .image:nth-child(3){
+    top:85%;
+    left:15%;
+    z-index: 1;
+  }
+
   .image:nth-child(4){
     width:400px;
     top:110%;
-    z-index: 5;
+    z-index: 2;
   }
 
   .image:nth-child(5){
     width:300px;
     top:130%;
     left:45%;
-    z-index: 6;
+    z-index: 2;
   }
 
   /*man*/
+  .image:nth-child(6){
+    top:150%;
+    left:60%;
+    z-index: 3;
+  }
   .image:nth-child(6) img{
-    transform:scale(0.9);
+    transform:scale(1.2);
   }
 
-/*leek*/
-  .image:nth-child(7) img{
-    transform:scale(0.5);
+  .image:nth-child(7){
+    top:160%;
+    left:0%;
+    z-index: 2;
   }
 
-/*indian*/
+  .image:nth-child(8){
+    top:215%;
+    left:40%;
+    z-index: 9;
+  }
   .image:nth-child(8) img{
-    top:250%;
-    z-index: 6;
-    transform:scale(0.9);
+    transform:scale(1.2);
   }
 
- .image:nth-child(10){
-    left:20%;
-    z-index: 1;
+  .image:nth-child(9){
+    top:230%;
+    left:60%;
+    z-index: 10;
   }
- .image:nth-child(11){
-  top:270%;
-}
+
+  /*man*/
+  .image:nth-child(10){
+    top:232%;
+    left:20%;
+
+  }
+
+  .image:nth-child(11){
+    top:290%;
+    left:45%;
+
+  }
+
   .image:nth-child(11) img{
-    transform:scale(0.8);
+    transform:scale(1.2);
   }
- 
-  .image:nth-child(12) {
-    left:20%;
-    top:280%;
+
+  .image:nth-child(12){
+    top:300%;
+    left:30%;
+
+  }
+  .image:nth-child(12) img{
+    transform:scale(1.1);
   }
   /*obama*/
   .image:nth-child(13){
-    top:320%;
+    top:362%;
+
   }
 
   .image:nth-child(14){
-    top:365%;
+    top:380%;
     left:50%;
-    z-index: 100;
+
+  }
+  .image:nth-child(14) img{
+    transform:scale(0.5);
   }
 
   /*subway*/
   .image:nth-child(15){
-    top:375%;
-    left:7%;
+    top:418%;
+    left:75%;
+
   }
   .image:nth-child(15) img{
     transform:scale(0.5);
@@ -323,64 +194,193 @@ header{
 
   /*tree*/
   .image:nth-child(16){
-    top:420%;
-
+    top:430%;
+    left:10%;
   }
 
   /*police*/
   .image:nth-child(17){
-    top:470%;
-    left:-5%;
+    top:510%;
+    left:5%;
+
   }
 
   /*museum*/
   .image:nth-child(18){
-    top:500%;
+    top:540%;
     left:30%;
-    z-index: 16;
+
   }
   .image:nth-child(19){
-    top:520%;
+    top:560%;
     left:10%;
-    z-index: 17;
+
   }
 
   .image:nth-child(20){
-    top:550%;
+    top:590%;
     left:5%;
-    z-index: 17;
+
   }
 
   .image:nth-child(21){
-    top:570%;
+    top:590%;
     left:35%;
-    z-index: 17;
+
   }
   .image:nth-child(21) img{
     transform:scale(0.5);
   }
-}
 
-@media screen and (max-width: 768px){
-  .image h2{
-    font-size: 12px;
+  .social a:hover{
+    color: #F69ECB;
   }
 
-/*leek*/
-  .image:nth-child(7){
-    left:0;
+  .v-logo a{
+    color: #F69ECB;
   }
-  .image:nth-child(10){
-    top:210%;
-    left:0%;
+  .v-logo a:hover{
+    color: #000;
   }
- .image:nth-child(9){
-  top:200%;
-}
- .image:nth-child(19){
-  top:530%;
-}
 
- .image:nth-child(21){
-  top:580%;
-}
+  @media screen and (max-width: 1260px){
+    .image:nth-child(1) img{
+      transform:scale(0.5);
+
+    }
+
+    .image:nth-child(2){
+      top:60%;
+      left:60%;
+      z-index: 2;
+    }
+
+    /*newspaper*/
+    .image:nth-child(4){
+      width:400px;
+      top:110%;
+      z-index: 5;
+    }
+
+    .image:nth-child(5){
+      width:300px;
+      top:130%;
+      left:45%;
+      z-index: 6;
+    }
+
+    /*man*/
+    .image:nth-child(6) img{
+      transform:scale(0.9);
+    }
+
+    /*leek*/
+    .image:nth-child(7) img{
+      transform:scale(0.5);
+    }
+
+    /*indian*/
+    .image:nth-child(8) img{
+      top:250%;
+      z-index: 6;
+      transform:scale(0.9);
+    }
+
+    .image:nth-child(10){
+      left:20%;
+      z-index: 1;
+    }
+    .image:nth-child(11){
+      top:270%;
+    }
+    .image:nth-child(11) img{
+      transform:scale(0.8);
+    }
+    
+    .image:nth-child(12) {
+      left:20%;
+      top:280%;
+    }
+    /*obama*/
+    .image:nth-child(13){
+      top:320%;
+    }
+
+    .image:nth-child(14){
+      top:365%;
+      left:50%;
+      z-index: 100;
+    }
+
+    /*subway*/
+    .image:nth-child(15){
+      top:375%;
+      left:7%;
+    }
+    .image:nth-child(15) img{
+      transform:scale(0.5);
+    }
+
+    /*tree*/
+    .image:nth-child(16){
+      top:420%;
+
+    }
+
+    /*police*/
+    .image:nth-child(17){
+      top:470%;
+      left:-5%;
+    }
+
+    /*museum*/
+    .image:nth-child(18){
+      top:500%;
+      left:30%;
+      z-index: 16;
+    }
+    .image:nth-child(19){
+      top:520%;
+      left:10%;
+      z-index: 17;
+    }
+
+    .image:nth-child(20){
+      top:550%;
+      left:5%;
+      z-index: 17;
+    }
+
+    .image:nth-child(21){
+      top:570%;
+      left:35%;
+      z-index: 17;
+    }
+    .image:nth-child(21) img{
+      transform:scale(0.5);
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .image h2{
+      font-size: 12px;
+    }
+
+    /*leek*/
+    .image:nth-child(7){
+      left:0;
+    }
+    .image:nth-child(10){
+      top:210%;
+      left:0%;
+    }
+    .image:nth-child(9){
+      top:200%;
+    }
+    .image:nth-child(19){
+      top:530%;
+    }
+
+    .image:nth-child(21){
+      top:580%;
+    }

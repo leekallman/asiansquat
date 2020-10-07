@@ -12,10 +12,6 @@
   src: url(syne-regular.otf);
 }
 
-
-html{
-  scroll-behavior: smooth;
-}
 body {
 	font-family: Syne Regular;
 	font-size: 20px;
@@ -23,7 +19,7 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
 
-  background-color: #FD620B;
+  background-color: #FF7B00;
   color: #000;
   box-sizing: border-box;
 }
@@ -69,26 +65,26 @@ span {
 
 .hero-head {
   position: relative;
-  font-size: 10em;
+  font-size: 8em;
   letter-spacing: 0.3em;
-}
-
-.text-wrapper {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
+  margin-bottom:0.2em;
 }
 
 .letter {
   transform-origin: 50% 100%;
   display: inline-block;
-  line-height: 1em;
+  line-height: 0.5em;
+}
+
+.subhead{
+  font-family: Syne Regular;
+  font-weight: 300;
 }
 
 
 /* popup */
 .achtung {
-  background-color: #f44336;
+  background-color: #E31A0D;
   top:4%;
   left:50%;
   transform: translate(-50%, -50%);
@@ -180,7 +176,6 @@ span {
   z-index: 1000;
 }
 
-/* practice */
 .practice-vid, .bye{
   display: flex;
 }
@@ -195,9 +190,9 @@ span {
   border-radius: 40%;
 }
 @-webkit-keyframes blinker{
-  0%{     color: #5BCCC5}
-  50%{    color: #F69ECB}
-  100%{   color: #5BCCC5}
+  0%{     color: #fff}
+  50%{    color: #5BCCC5/*#F69ECB*/}
+  100%{   color: #fff}
 }
 
 /* how to do*/
@@ -235,8 +230,6 @@ span {
   display: block;
   padding-left: 4em;
 }
-
-
 
 /*back to top*/
 .scroll {
@@ -392,10 +385,6 @@ span {
     padding-left: 5em;
   }
 
-  video{
-    transform: scale(0.7);
-  }
-
   .v-logo{
     transform: rotate(-90deg);
     bottom:60%;
@@ -415,10 +404,10 @@ span {
     font-size: 14px;
   }
 
-  .holder{
-    perspective: 600px;
-    overflow: hidden;
+    .hero{
+    padding-top: 100px;
   }
+
   .hero-head {
   font-size: 8em;
   }
@@ -450,6 +439,9 @@ span {
   font-size: 6em;
   }
 
+  .how, .why{
+        padding-top:100px;
+  }
   .how h1{
     padding-bottom: 20px;
   }
@@ -472,6 +464,32 @@ span {
   }
   .bye, .practice-vid{
     display: block
+  }
+
+  .asia:hover::after{
+    width:100px;
+    transform: translate(0%, -10%) scale(0.8);
+  }
+
+  .pan:hover::after{
+    width:200px;
+    transform: translate(0%, -30%)scale(0.8);
+  }
+
+  .chair:hover::after{
+    transform: translate(0%, -100%)scale(0.7) ;
+  }
+
+  .mobility:hover::before {
+    transform: translate(-68%, -100%);
+  }
+
+  .lisa, .internet{
+  text-decoration:none;
+  }
+
+  .lisa:hover::after, .internet:hover::after {
+    display: none;
   }
 
 }
