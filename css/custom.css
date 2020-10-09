@@ -13,10 +13,10 @@
 }
 
 body {
-	font-family: 'Syne Regular', georgia, serif;
-	font-size: 20px;
-	line-height: 1.2;
+  font-family: 'Syne Regular', georgia, serif;
   font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
   -webkit-font-smoothing: antialiased;
 
   background-color: #FF7B00;
@@ -77,7 +77,7 @@ span {
 }
 
 .subhead{
-  font-family: 'Syne Extra', georgia, serif;
+  font-family: 'Syne Regular', georgia, serif;
   font-weight: normal;
 }
 
