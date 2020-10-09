@@ -49,7 +49,7 @@ document.querySelector('html').classList.remove('no-js');
 if (!window.Cypress) {
   const scrollCounter = document.querySelector('.js-scroll-counter');
 
-  AOS.init({
+  aos.init({
     mirror: true
   });
 
