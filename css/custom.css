@@ -1,12 +1,12 @@
 @font-face {
-  font-family: Syne Extra;
-  src: url(syne-extra.otf);
-}
-@font-face {
   font-family: Syne Bold;
   src: url(spacegrotesk-medium.otf);
 }
 
+@font-face {
+  font-family: Syne Extra;
+  src: url(syne-extra.otf);
+}
 @font-face {
   font-family: Syne Regular;
   src: url(Syne-Regular.otf);
